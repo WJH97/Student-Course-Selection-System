@@ -52,6 +52,7 @@
             <asp:ListItem Value="SysAdminTeacher.aspx">教师信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminCourse.aspx">课程信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminRelease.aspx">发布课程管理</asp:ListItem>
+                <asp:ListItem Value="SysControl.aspx">选课控制</asp:ListItem>
         </asp:BulletedList>
                     <h2 style="text-align:center">学生信息</h2>
                 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="学号" DataSourceID="SqlDataSource1" Width="100%">
@@ -59,18 +60,30 @@
                 <asp:BoundField DataField="学号" HeaderText="学号" ReadOnly="True" SortExpression="学号" />
                 <asp:BoundField DataField="姓名" HeaderText="姓名" SortExpression="姓名" />
                 <asp:BoundField DataField="性别" HeaderText="性别" SortExpression="性别" />
-                <asp:BoundField DataField="年级" HeaderText="年级" SortExpression="年级" />
-                <asp:BoundField DataField="专业名称" HeaderText="专业名称" SortExpression="专业名称" />
-                <asp:BoundField DataField="学院名称" HeaderText="学院名称" SortExpression="学院名称" />
                 <asp:BoundField DataField="密码" HeaderText="密码" SortExpression="密码" />
+                <asp:BoundField DataField="专业编号" HeaderText="专业编号" SortExpression="专业编号" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Columns>
             <RowStyle HorizontalAlign="Center" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString2 %>" DeleteCommand="DELETE FROM StudentData WHERE (学号 = @学号)" InsertCommand="INSERT INTO StudentData(姓名, 性别, 学号, 专业编号, 密码) VALUES (,,,,)" SelectCommand="SELECT StudentData.学号, StudentData.姓名, StudentData.性别, Major.专业名称, Major.年级, Dept.学院名称, StudentData.密码 FROM StudentData INNER JOIN Major ON StudentData.专业编号 = Major.专业编号 INNER JOIN Dept ON Major.学院编号 = Dept.学院编号" UpdateCommand="UPDATE StudentData SET 学号 =, 姓名 =, 性别 =, 密码 = FROM StudentData INNER JOIN Major ON StudentData.专业编号 = Major.专业编号 INNER JOIN Dept ON Major.学院编号 = Dept.学院编号">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString2 %>" DeleteCommand="DELETE FROM [StudentData] WHERE [学号] = @学号" InsertCommand="INSERT INTO [StudentData] ([学号], [姓名], [性别], [专业编号], [密码]) VALUES (@学号, @姓名, @性别, @专业编号, @密码)" SelectCommand="SELECT * FROM [StudentData]" UpdateCommand="UPDATE [StudentData] SET [姓名] = @姓名, [性别] = @性别, [专业编号] = @专业编号, [密码] = @密码 WHERE [学号] = @学号">
             <DeleteParameters>
-                <asp:Parameter Name="学号" />
+                <asp:Parameter Name="学号" Type="String" />
             </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="学号" Type="String" />
+                <asp:Parameter Name="姓名" Type="String" />
+                <asp:Parameter Name="性别" Type="String" />
+                <asp:Parameter Name="专业编号" Type="String" />
+                <asp:Parameter Name="密码" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="姓名" Type="String" />
+                <asp:Parameter Name="性别" Type="String" />
+                <asp:Parameter Name="专业编号" Type="String" />
+                <asp:Parameter Name="密码" Type="String" />
+                <asp:Parameter Name="学号" Type="String" />
+            </UpdateParameters>
         </asp:SqlDataSource>
 <br/>
     </form>

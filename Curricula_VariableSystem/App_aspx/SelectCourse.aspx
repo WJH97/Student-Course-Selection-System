@@ -67,7 +67,7 @@
             <RowStyle HorizontalAlign="Center" />
         </asp:GridView>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString %>" SelectCommand="SELECT [课程名称], [课程类别], [学分] FROM [Course] WHERE ([发布状态] = @发布状态)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString %>" SelectCommand="SELECT DISTINCT 课程名称, 课程类别, 学分 FROM Course WHERE (发布状态 = @发布状态)">
             <SelectParameters>
                 <asp:Parameter DefaultValue="1" Name="发布状态" Type="Int32" />
             </SelectParameters>

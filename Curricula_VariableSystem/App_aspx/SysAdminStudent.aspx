@@ -52,6 +52,7 @@
             <asp:ListItem Value="SysAdminTeacher.aspx">教师信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminCourse.aspx">课程信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminRelease.aspx">发布课程管理</asp:ListItem>
+                <asp:ListItem Value="SysControl.aspx">选课控制</asp:ListItem>
         </asp:BulletedList>
                     <h2 style="text-align:center">学生信息</h2>
          <div dir="ltr"  >

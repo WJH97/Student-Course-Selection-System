@@ -60,6 +60,7 @@
                 <asp:BoundField DataField="学分" HeaderText="学分" SortExpression="学分"  />
                 <asp:BoundField DataField="上课时间" HeaderText="上课时间" SortExpression="上课时间"  />
                 <asp:BoundField DataField="上课地点" HeaderText="上课地点" SortExpression="上课地点" />
+                <asp:BoundField DataField="已选人数" HeaderText="已选人数" SortExpression="已选人数" />
                 <asp:BoundField DataField="人数上限" HeaderText="人数上限" SortExpression="人数上限"  />
                 <asp:BoundField DataField="课程介绍" HeaderText="课程介绍" SortExpression="课程介绍" />
                  <asp:TemplateField HeaderText="选定">

@@ -116,6 +116,7 @@
     <Content Include="App_aspx\SysAdminStudent01.aspx" />
     <Content Include="App_aspx\SysAdminTeacher.aspx" />
     <Content Include="App_aspx\SysAdminTeacher00.aspx" />
+    <Content Include="App_aspx\SysControl.aspx" />
     <Content Include="App_aspx\SysTeacher.aspx" />
     <Content Include="App_aspx\SysTeacherCont.aspx" />
     <Content Include="App_aspx\TCourse.aspx" />
@@ -302,6 +303,13 @@
     </Compile>
     <Compile Include="App_aspx\SysAdminTeacher00.aspx.designer.cs">
       <DependentUpon>SysAdminTeacher00.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_aspx\SysControl.aspx.cs">
+      <DependentUpon>SysControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_aspx\SysControl.aspx.designer.cs">
+      <DependentUpon>SysControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_aspx\SysTeacher.aspx.cs">
       <DependentUpon>SysTeacher.aspx</DependentUpon>

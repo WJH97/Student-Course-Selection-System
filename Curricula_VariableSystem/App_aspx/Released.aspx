@@ -85,7 +85,7 @@
             <RowStyle HorizontalAlign="Center" />
         </asp:GridView>
         <br/>
-        <h2 style="text-align:center">未审批通过课程信息</h2>
+        <h2 style="text-align:center">审批未通过课程信息</h2>
         <asp:GridView ID="GridView3" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="课程编号" DataSourceID="SqlDataSource3" Width="100%">
             <Columns>
                 <asp:HyperLinkField DataNavigateUrlFields="课程编号" DataNavigateUrlFormatString="Released02.aspx?课程编号={0}" DataTextField="课程编号" HeaderText="课程编号" />

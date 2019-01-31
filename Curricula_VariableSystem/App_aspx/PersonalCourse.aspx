@@ -53,8 +53,19 @@
         <br/>
     <div>
     
-        <asp:Table ID="Table1" runat="server" GridLines="Both">
-        </asp:Table>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" AllowPaging="True">
+            <Columns>
+                <asp:BoundField DataField="课程名称" HeaderText="课程名称" SortExpression="课程名称" />
+                <asp:BoundField DataField="上课时间" HeaderText="上课时间" SortExpression="上课时间" />
+                <asp:BoundField DataField="上课地点" HeaderText="上课地点" SortExpression="上课地点" />
+            </Columns>
+            <RowStyle HorizontalAlign="Center" />
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString %>" SelectCommand="SELECT [课程名称], [上课时间], [上课地点] FROM [View_STPC] WHERE ([学号] = @学号)">
+            <SelectParameters>
+                <asp:SessionParameter Name="学号" SessionField="Unum" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     
     </div>
     </form>

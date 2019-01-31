@@ -25,6 +25,7 @@ namespace Curricula_VariableSystem.App_aspx
                 SqlCommand cmdcsmax = new SqlCommand("select 人数上限 from Course where 课程编号='" + strnum + "'", Conn);
                 SqlCommand cmdctime = new SqlCommand("select 上课时间 from Course where 课程编号='" + strnum + "'", Conn);
                 SqlCommand cmdcplace = new SqlCommand("select 上课地点 from Course where 课程编号='" + strnum + "'", Conn);
+
                 string Ct = ListBox3.Text + ListBox4.Text;
                 string Cp = DropDownList1.Text + ListBox5.Text + ListBox6.Text;
                 string Cname = (string)cmdcname.ExecuteScalar();
@@ -59,7 +60,7 @@ namespace Curricula_VariableSystem.App_aspx
                         Conn.Open();
                         string Ct = ListBox3.Text + ListBox4.Text;
                         string Cp = DropDownList1.Text + ListBox5.Text + ListBox6.Text;
-                        SqlCommand cmd = new SqlCommand("UPDATE Course SET 课程名称='" + TextBox2.Text + "',课程类别='" + ListBox1.Text + "',学分='" + ListBox2.Text + "',上课时间='" + Ct + "',上课地点='" + Cp + "',人数上限='" + TextBox3.Text + "',课程介绍='" + TextBox4.Text + "'WHERE 课程编号='" + TextBox1.Text + "'", Conn);
+                        SqlCommand cmd = new SqlCommand("UPDATE Course SET 课程名称='" + TextBox2.Text + "',课程类别='" + ListBox1.Text + "',学分='" + ListBox2.Text + "',上课时间='" + Ct + "',上课地点='" + Cp + "',人数上限='" + TextBox3.Text + "',课程介绍='" + TextBox4.Text + "',发布状态=0 WHERE 课程编号='" + TextBox1.Text + "'", Conn);
                         if (cmd.ExecuteNonQuery() > 0)
                             Response.Write("<script languge='javascript'>alert('修改成功！'); window.location.href='ReleaseCourse.aspx'</script>");
                         Conn.Close();
@@ -73,6 +74,22 @@ namespace Curricula_VariableSystem.App_aspx
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("Released.aspx");
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string SqlConn = System.Configuration.ConfigurationManager.AppSettings["SqlConn"];
+            SqlConnection Conn = new SqlConnection(SqlConn);
+            SqlCommand selectednum = new SqlCommand("SELECT * FROM Course WHERE 课程编号 like'%" + TextBox1.Text + "%'", Conn);
+            Conn.Open();
+            SqlDataReader SqlRenum = selectednum.ExecuteReader();
+            bool reboolnum = SqlRenum.Read();
+            Conn.Close();
+            if (reboolnum)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "<script>alert('该编号已存在！');</script>");
+                TextBox1.Text = "";
+            }
         }
     }
 

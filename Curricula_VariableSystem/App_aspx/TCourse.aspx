@@ -53,6 +53,20 @@
             <asp:ListItem Value="ReleaseScore.aspx">成绩</asp:ListItem>
             <asp:ListItem Value="TCourse.aspx">查看个人课表</asp:ListItem>
         </asp:BulletedList>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" AllowPaging="True">
+            <Columns>
+                <asp:BoundField DataField="课程名称" HeaderText="课程名称" SortExpression="课程名称" />
+                <asp:BoundField DataField="上课时间" HeaderText="上课时间" SortExpression="上课时间" />
+                <asp:BoundField DataField="上课地点" HeaderText="上课地点" SortExpression="上课地点" />
+            </Columns>
+            <RowStyle HorizontalAlign="Center" />
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString %>" SelectCommand="SELECT [课程名称], [上课时间], [上课地点] FROM [View_TPC] WHERE (([教师工号] = @教师工号) AND ([发布状态] = @发布状态))">
+            <SelectParameters>
+                <asp:SessionParameter Name="教师工号" SessionField="Unum" Type="String" />
+                <asp:Parameter DefaultValue="1" Name="发布状态" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </form>
-</body>
+    </body>
 </html>

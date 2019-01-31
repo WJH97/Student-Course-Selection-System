@@ -64,3 +64,69 @@ D:\VS project\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curric
 D:\VS project\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.dll
 D:\VS project\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.pdb
 D:\VS project\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.dll.config
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\ApplicationInsights.config
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\csc.exe
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\vbc.exe
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\VBCSCompiler.exe
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.dll.config
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.pdb
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Agent.Intercept.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.DependencyCollector.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Web.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.WindowsServer.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.ApplicationInsights.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.DependencyCollector.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Web.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.WindowsServer.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.ApplicationInsights.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.csprojResolveAssemblyReference.cache
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.dll
+D:\VS project\WebAsp.netProj\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.pdb
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\ApplicationInsights.config
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\csc.exe
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\System.Collections.Immutable.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\System.Reflection.Metadata.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\vbc.exe
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\VBCSCompiler.exe
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\roslyn\VBCSCompiler.exe.config
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.dll.config
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Curricula_VariableSystem.pdb
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Agent.Intercept.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.DependencyCollector.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Web.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.WindowsServer.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.ApplicationInsights.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.DependencyCollector.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.Web.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.AI.WindowsServer.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.ApplicationInsights.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.csprojResolveAssemblyReference.cache
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.dll
+F:\MyU\小学期\Curricula_VariableSystem\Curricula_VariableSystem\obj\Debug\Curricula_VariableSystem.pdb

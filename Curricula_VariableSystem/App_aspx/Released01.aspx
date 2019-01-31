@@ -62,11 +62,6 @@
                 <asp:BoundField DataField="学号" HeaderText="学号" SortExpression="学号" />
                 <asp:BoundField DataField="年级" HeaderText="年级" SortExpression="年级" />
                 <asp:BoundField DataField="专业名称" HeaderText="专业名称" SortExpression="专业名称" />
-                <asp:TemplateField ShowHeader="False">
-                    <ItemTemplate>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" OnClientClick="return confirm('确认要删除该学生吗？');"></asp:LinkButton>
-                    </ItemTemplate>
-                </asp:TemplateField>
 
             </Columns>
             <RowStyle HorizontalAlign="Center" />

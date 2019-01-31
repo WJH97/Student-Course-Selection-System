@@ -17,6 +17,21 @@ namespace Curricula_VariableSystem.App_aspx
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string SqlConn = System.Configuration.ConfigurationManager.AppSettings["SqlConn"];
+            SqlConnection Conn = new SqlConnection(SqlConn);
+            SqlCommand selectednum = new SqlCommand("SELECT * FROM Course WHERE 课程编号 like'%" + TextBox1.Text + "%'", Conn);
+            Conn.Open();
+            SqlDataReader SqlRenum = selectednum.ExecuteReader();
+            bool reboolnum = SqlRenum.Read();
+            Conn.Close();
+            if (reboolnum)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "<script>alert('该编号已存在！');</script>");
+                TextBox1.Text = "";
+            }
+        }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
@@ -66,21 +81,7 @@ namespace Curricula_VariableSystem.App_aspx
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-            string SqlConn = System.Configuration.ConfigurationManager.AppSettings["SqlConn"];
-            SqlConnection Conn = new SqlConnection(SqlConn);
-            SqlCommand selectednum = new SqlCommand("SELECT * FROM Course WHERE 课程编号 like'%" + TextBox1.Text + "%'", Conn);
-            Conn.Open();
-            SqlDataReader SqlRenum = selectednum.ExecuteReader();
-            bool reboolnum = SqlRenum.Read();
-            Conn.Close();
-            if (reboolnum)
-            {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "<script>alert('该编号已存在！');</script>");
-                TextBox1.Text = "";
-            }
-        }
+
 
 
 

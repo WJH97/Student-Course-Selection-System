@@ -52,6 +52,7 @@
             <asp:ListItem Value="SysAdminTeacher.aspx">教师信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminCourse.aspx">课程信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminRelease.aspx">发布课程管理</asp:ListItem>
+                <asp:ListItem Value="SysControl.aspx">选课控制</asp:ListItem>
         </asp:BulletedList>
                 <asp:Panel ID="Panel1" runat="server" Height="298px" style="margin-top: 18px">
             <hr/> 
@@ -91,3 +92,4 @@
         </asp:Panel>
         </form>
     </body>
+    </html>

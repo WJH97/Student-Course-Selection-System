@@ -47,8 +47,8 @@
         <br/>
         <br/>
 <asp:BulletedList ID="BulletedList1" runat="server" DisplayMode="HyperLink"  CssClass="style2" Height="45px" Width="100%" BorderStyle="NotSet">
-            <asp:ListItem Value="SysStudent.aspx">公告</asp:ListItem>
-            <asp:ListItem Value="SelectCourse.aspx"> 选课</asp:ListItem>    
+            <asp:ListItem  Value="SysStudent.aspx">公告</asp:ListItem>
+            <asp:ListItem  Value="SelectCourse.aspx"> 选课</asp:ListItem>    
             <asp:ListItem Value="StudentCourse.aspx">查看已选课程</asp:ListItem>
             <asp:ListItem Value="PersonalCourse.aspx">查看个人课表</asp:ListItem>
             <asp:ListItem Value="StudentScore.aspx">查看成绩</asp:ListItem>

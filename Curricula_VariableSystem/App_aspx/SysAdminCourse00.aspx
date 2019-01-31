@@ -52,6 +52,7 @@
             <asp:ListItem Value="SysAdminTeacher.aspx">教师信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminCourse.aspx">课程信息管理</asp:ListItem>
             <asp:ListItem Value="SysAdminRelease.aspx">发布课程管理</asp:ListItem>
+                <asp:ListItem Value="SysControl.aspx">选课控制</asp:ListItem>
         </asp:BulletedList>
                     <h2 style="text-align:center">课程信息</h2>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="课程编号" DataSourceID="SqlDataSource1" Width="100%" AllowPaging="True">
@@ -59,25 +60,48 @@
                 <asp:BoundField DataField="课程编号" HeaderText="课程编号" ReadOnly="True" SortExpression="课程编号" />
                 <asp:BoundField DataField="课程名称" HeaderText="课程名称" SortExpression="课程名称" />
                 <asp:BoundField DataField="课程类别" HeaderText="课程类别" SortExpression="课程类别" />
+                <asp:BoundField DataField="教师工号" HeaderText="教师工号" SortExpression="教师工号" />
                 <asp:BoundField DataField="学分" HeaderText="学分" SortExpression="学分" />
                 <asp:BoundField DataField="上课时间" HeaderText="上课时间" SortExpression="上课时间" />
                 <asp:BoundField DataField="上课地点" HeaderText="上课地点" SortExpression="上课地点" />
                 <asp:BoundField DataField="人数上限" HeaderText="人数上限" SortExpression="人数上限" />
-                <asp:BoundField DataField="姓名" HeaderText="姓名" SortExpression="姓名" />
-                <asp:BoundField DataField="学院名称" HeaderText="学院名称" SortExpression="学院名称" />
+                <asp:BoundField DataField="已选人数" HeaderText="已选人数" SortExpression="已选人数" />
                 <asp:BoundField DataField="课程介绍" HeaderText="课程介绍" SortExpression="课程介绍" />
+                <asp:BoundField DataField="发布状态" HeaderText="发布状态" SortExpression="发布状态" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Columns>
             <RowStyle HorizontalAlign="Center" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString2 %>" DeleteCommand="DELETE FROM Course FROM Course INNER JOIN Teacher ON Course.教师工号 = Teacher.教师工号 INNER JOIN Dept ON Teacher.学院编号 = Dept.学院编号
-WHERE 课程编号=@课程编号" SelectCommand="SELECT Course.课程编号, Course.课程名称, Course.课程类别, Course.学分, Course.上课时间, Course.上课地点, Course.人数上限, Teacher.姓名, Dept.学院名称, Course.课程介绍 FROM Course INNER JOIN Teacher ON Course.教师工号 = Teacher.教师工号 INNER JOIN Dept ON Teacher.学院编号 = Dept.学院编号 WHERE (Course.发布状态 = @发布状态)" UpdateCommand="UPDATE Course SET 课程编号 =, 课程名称 =, 课程类别 =, 学分 =, 上课时间 =, 上课地点 =, 人数上限 =, 课程介绍 = FROM Course INNER JOIN Dept ON Course.学院编号 = Dept.学院编号 INNER JOIN Teacher ON Course.教师工号 = Teacher.教师工号">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CVSDBConnectionString2 %>" DeleteCommand="DELETE FROM [Course] WHERE [课程编号] = @课程编号" SelectCommand="SELECT * FROM [Course]" UpdateCommand="UPDATE [Course] SET [课程名称] = @课程名称, [课程类别] = @课程类别, [教师工号] = @教师工号, [学分] = @学分, [上课时间] = @上课时间, [上课地点] = @上课地点, [人数上限] = @人数上限, [已选人数] = @已选人数, [课程介绍] = @课程介绍, [发布状态] = @发布状态 WHERE [课程编号] = @课程编号" InsertCommand="INSERT INTO [Course] ([课程编号], [课程名称], [课程类别], [教师工号], [学分], [上课时间], [上课地点], [人数上限], [已选人数], [课程介绍], [发布状态]) VALUES (@课程编号, @课程名称, @课程类别, @教师工号, @学分, @上课时间, @上课地点, @人数上限, @已选人数, @课程介绍, @发布状态)">
             <DeleteParameters>
-                <asp:Parameter Name="课程编号" />
+                <asp:Parameter Name="课程编号" Type="String" />
             </DeleteParameters>
-            <SelectParameters>
-                <asp:Parameter DefaultValue="1" Name="发布状态" />
-            </SelectParameters>
+            <InsertParameters>
+                <asp:Parameter Name="课程编号" Type="String" />
+                <asp:Parameter Name="课程名称" Type="String" />
+                <asp:Parameter Name="课程类别" Type="String" />
+                <asp:Parameter Name="教师工号" Type="String" />
+                <asp:Parameter Name="学分" Type="Double" />
+                <asp:Parameter Name="上课时间" Type="String" />
+                <asp:Parameter Name="上课地点" Type="String" />
+                <asp:Parameter Name="人数上限" Type="Int32" />
+                <asp:Parameter Name="已选人数" Type="Int32" />
+                <asp:Parameter Name="课程介绍" Type="String" />
+                <asp:Parameter Name="发布状态" Type="Int32" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="课程名称" Type="String" />
+                <asp:Parameter Name="课程类别" Type="String" />
+                <asp:Parameter Name="教师工号" Type="String" />
+                <asp:Parameter Name="学分" Type="Double" />
+                <asp:Parameter Name="上课时间" Type="String" />
+                <asp:Parameter Name="上课地点" Type="String" />
+                <asp:Parameter Name="人数上限" Type="Int32" />
+                <asp:Parameter Name="已选人数" Type="Int32" />
+                <asp:Parameter Name="课程介绍" Type="String" />
+                <asp:Parameter Name="发布状态" Type="Int32" />
+                <asp:Parameter Name="课程编号" Type="String" />
+            </UpdateParameters>
         </asp:SqlDataSource>
     </form>
 </body>

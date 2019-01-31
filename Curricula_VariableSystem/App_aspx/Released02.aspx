@@ -79,7 +79,7 @@
         <h2 style="text-align:center">修改发布课程信息</h2>
         <table style="width: 100%; ">
             <tr>
-                <td class="auto-style3">课程编号：<asp:TextBox ID="TextBox1" runat="server" style="vertical-align:middle;" AutoPostBack="True" ></asp:TextBox>
+                <td class="auto-style3">课程编号：<asp:TextBox ID="TextBox1" runat="server" style="vertical-align:middle;" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged" ></asp:TextBox>
                     *</td>
                 <td class="auto-style5">课程名称：<asp:TextBox ID="TextBox2" runat="server" style="vertical-align:middle;" ></asp:TextBox>*
                     </td>
