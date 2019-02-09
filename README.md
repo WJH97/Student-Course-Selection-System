@@ -1,5 +1,5 @@
 #### 基于VS2015 +sql server 2016开发
-使用.net4.5 框架, WebForm
+使用ASP.net4.5 框架, WebForm
 #### 配置
 数据库在Mydb\CSVDB.mdf
 
